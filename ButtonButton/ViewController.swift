@@ -10,11 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var myLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func buttonPre(_ sender: Any) {
+        myLabel.text = "라뱰"
+    }
+    
+    @IBAction func claer(_ sender: Any) {
+        myLabel.text = "라벨"
+    }
+    
+    @IBAction func change(_ sender: Any) {
+        myLabel.backgroundColor = UIColor.white
+    
+    }
+    
+    
 
 }
-
